@@ -1,0 +1,12 @@
+.list__inside {
+    display: flex;
+    padding: 10px 0 10px 20px;
+}
+.select__inside{
+    padding: 5px;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    border:2px solid #5482d0;
+    width: 85%;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.container {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	background: #6CB4EE;
+	}
+.welcome {
+	font-size: 1.9rem;
+	margin: 30px 0 0 0;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.container_map {
+	position: relative;
+	top: 10%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  width: 300px;
+  height: 300px;
+  background: lightblue;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: -30px -20px 0 0 rgba(0,0,0,.1) inset,
+  					  -70px -30px 0 0 rgba(0,0,0,.1) inset,
+							1px 1px 0 0 rgba(255,255,255,.2) inset;
+	background: url(../../utils/map.png);
+	background-size: cover;
+    animation: 5s infinite linear giro;
+}
+@keyframes giro {
+	from {
+		background-position:  left center;
+	}
+	to {
+		background-position: -550px center;
+	}
+}
+
+button.my-button{
+ position: relative;
+ top: 110%;
+ background: linear-gradient(to right,#196BCA ,#6433E0);
+ background-color: #196BCA;
+ color: #fff;
+ font-family: Trebuchet MS;
+ font-size: 18px;
+ font-weight: 800;
+ font-style: normal;
+ text-decoration: none;
+ padding: 14px 15px;
+ border: 0px solid #000;
+ border-radius: 10px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+}
+
+button.my-button:hover{
+ background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+ background-color: #5482d0;
+ animation: shaker 0.5s linear;
+}
+@keyframes shaker {
+    0% {
+      transform:scale(1.15);
+    }
+    100% {
+      transform:scale(1);
+    }
+}
+
+@media only screen and (max-width: 633px) {
+	.welcome {
+		font-size: 1.4rem;
+		margin: 20px 0 0 0;
+	}
+	button.my-button{
+		padding: 10px 11px;
+	}
+	.container_map {
+		top: 15%;
+	}
+}

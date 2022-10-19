@@ -1,0 +1,32 @@
+.countries__container {
+    display: grid;
+    gap: 3.5rem;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    padding: 25px 0 15px 15px;
+    margin-bottom: 50px;
+}
+@media only screen and (max-width: 920px) {
+    .countries__container {
+        column-gap: 2rem;
+    }
+}
+@media only screen and (max-width: 845px) {
+    .countries__container {
+        padding: 25px 35px 15px 5px;
+    }
+}
+
+@media only screen and (max-width: 714px) {
+    .countries__container {
+        grid-auto-rows: 12rem;
+        padding: 25px 35px 15px 35px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .countries__container {
+        font-size: 0.8rem;
+        grid-auto-rows: 10rem;
+        padding: 25px 35px 15px 20px;
+    }
+}

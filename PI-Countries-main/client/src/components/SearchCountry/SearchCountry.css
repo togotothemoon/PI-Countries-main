@@ -1,0 +1,29 @@
+
+.SearchCountry__input {
+    padding: 5px;
+    
+    border-radius: 10px;
+    background: transparent;
+    border:2px solid #d9d9d9;
+    width: 85%;
+    outline: none;
+    border:2px solid #196BCA;
+}
+.search__button {
+    position: relative;
+    top: 110%;
+    background-color: #5482d0;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 5px 5px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+   }
