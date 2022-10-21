@@ -37,8 +37,7 @@ const loaderDB = async () => {
         });
       });
     };
-  
-    console.log("Ready DB!");
+
     return saver();
   };
   

@@ -12,9 +12,9 @@ function Countries() {
   const page = useSelector((state)=> state.currentPage)
   const [countryPerPage] = useState(9);
 
-  const indexTo = page * countryPerPage; //
-  const indexFrom = indexTo - countryPerPage; //
-  const CardCountryRender = countriesData.slice(indexFrom, indexTo); //arrray with 10 countries
+  const indexTo = page * countryPerPage; 
+  const indexFrom = indexTo - countryPerPage; 
+  const CardCountryRender = countriesData.slice(indexFrom, indexTo); 
   const paginate = (el) => dispatch(pageSwitcher(el));
 
   useEffect(() => {
