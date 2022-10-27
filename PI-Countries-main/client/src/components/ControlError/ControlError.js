@@ -3,7 +3,7 @@ export const ControlError = (values) => {
     const urlValidator = /^$|((http(s?):)([/|.|\w|\s|-])*\.(?:jpg|png))/g;
     const numberValidator = /^[1-9][0-9]*$/;
     if (!values.name) {
-        errors.name = "An Activity name is required";
+        errors.name = "Activity name is required";
     }
     if (!values.difficulty) {
         errors.difficulty = "Difficulty is required"

@@ -1,9 +1,8 @@
 import React from 'react';
-//import { useSelector } from "react-redux";
 import './Pagination.css';
 
 function Pagination({ elementsPerPage, totalCountries, paginate }) {
-  //const page = useSelector((state)=> state.currentPage)
+
   const numberPages = [];
   for (let i = 1; i <= Math.ceil(totalCountries / elementsPerPage); i++) {
     numberPages.push(i);

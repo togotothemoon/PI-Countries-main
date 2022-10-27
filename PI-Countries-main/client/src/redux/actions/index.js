@@ -11,7 +11,7 @@ import {
   GET_ALL_ACTIVITIES,
   DELETE_ACTIVITY,
   CREATE_ACTIVITY,
-  GET_COUNTRY_DETAILS
+  GET_COUNTRY_DETAILS,
 } from "../constants.js";
 
 let url = 'http://localhost:3001';

@@ -11,7 +11,7 @@ import {
     DELETE_ACTIVITY,
     CREATE_ACTIVITY,
     GET_COUNTRY_DETAILS,
-} from "../actions/index.js";
+} from "../constants.js";
 
 const initialState = {
     countries: [],
@@ -139,7 +139,7 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 activitiesAux: state.activitiesAux + 1,
                 activities: state.activities.filter((el) => el.id !== action.payload)
-            }
+            };
         case CREATE_ACTIVITY:
             return {
                  ...state,
